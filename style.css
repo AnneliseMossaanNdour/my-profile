@@ -1,0 +1,125 @@
+ @font-face{
+ 	font-family:'Flowers'; 
+ 	src: url(fonts/flowers.ttf);
+ }
+
+ /* Colors and fonts */
+body{
+ 	background-image:url(images/flowers.jpg) ;
+ 	color: black;
+ 	font-family: Helvetica;
+ 	font-weight:bold;
+ 	font-size: 16px;
+}
+h1{
+	color:rgba(46,78,179,255);
+	font-family: flowers;
+	font-size: 75px;
+	font-weight: bold;
+}
+h2{
+	color:#e88a53;
+	font-style: italic;
+	font-family: Aktiv Grotesk;
+	font-size: 40px;
+	font-weight:bold;
+	text-decoration:underline;
+}
+a{
+	text-decoration: none;
+	color: #e88a53;
+	transition: color 0.3s ease;
+	font-weight:bold;
+}
+a:hover{
+  color:#d73d56;
+}
+
+/* Custom design with class */
+
+.container{
+	width : 700px;
+	margin : 40px auto;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+.card-white{
+	background-color:rgb(228,214,198);
+	padding:40px;
+	box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+	border-radius:4px;
+	margin: 20px 0px;
+	text-align: center;
+}	
+.card-white:hover{
+	background-color:white;
+	color:black;
+	padding:40px;
+	box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+	border-radius:4px;
+	margin: 20px 0px;
+	text-align: center;
+}
+.img-circle{
+	border-radius:50%;
+	text-align: center;
+	width:200px;
+}
+.btn-blue{
+	background-color:rgba(156,154,69,255);
+	color:rgb(220,204,169);
+	padding:15px 20px;
+	border-radius:4px;
+	margin:10px 10px;
+	cursor:pointer;
+}
+.btn-blue:hover{
+	background-color:rgba(43,81,180,255);
+	color:rgb(228,214,198);
+}
+.list-inline{
+	 list-syle:none ;
+	 padding: 0px;
+}
+.list-inline li{
+	display:inline;  
+	padding:15px;
+}
+.list-inline i{
+	font-size:50px;
+	color:rgb(215,61,86);
+}
+.list-inline i:hover{
+	font-size:55px;
+	color:rgba(43,81,180,255);
+	
+}
+#introduction p{
+	margin-bottom:40px;
+	text-align:justify;
+}
+
+.text-justify{
+	text-align:justify;
+}
+.img-bordered{
+	  border: 8px solid #d73d56 ;
+}
